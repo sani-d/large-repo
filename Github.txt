@@ -1,0 +1,220 @@
+What is Github?
+Github is source control code hosting platform and collaboration.
+
+github hierarchy:
+-Enterprise
+-organization
+-repository
+
+What is github enterprise?
+allows you to manage multiple organizations.
+
+What is organizations?
+It is hub or place where you manage code of your software by creating repository.
+
+What is repository?
+A repository is usually used to organize a single project.
+Repositories can contain folders and files, images, videos, spreadsheets, and data sets -- anything your project needs. 
+Often, repositories include a README file, a file with information about your project. README files are written in the plain text Markdown language
+
+codespace-Development environment hosted on cloud
+
+What is branch?
+Branch is a independent line of development.
+
+why we use branch?
+branching is used in version control and software management to maintain stability in the production branch(main) while changes are made in the sub branches or feature branches
+
+What is commit?
+On GitHub, saved changes are called commits.
+Each commit has an associated commit message, which is a description explaining why a particular change was made.
+Commit messages capture the history of your changes so that other contributors can understand what you’ve done and why.
+
+what is pull request?
+A "pull request" is you requesting the target repository to please grab your changes.
+
+What is push request?
+A "push request" would be the target repository requesting you to push your changes
+
+What is merge?
+When you select the Squash and merge option on a pull request on GitHub.com, 
+the pull request's commits are squashed into a single commit.
+Instead of seeing all of a contributor's individual commits from a topic branch, the commits are combined into one commit and merged into the default branch.
+
+
+Github flow:
+
+	1.Create a new Branch
+	2.Make changes and add Commits
+	3.Open a Pull Request
+	4.Review
+	5.Deploy
+	6.Merge
+
+
+
+
+
+
+	
+Migrations 
+Svn to github-->
+gitlab to github-->
+BB to github --> 
+GHES to GHECLOUD--> 
+GHEC TO GHES----> 
+
+	Migration steps
+step-1
+	Pre-migarations checks
+	
+REPOSITORY-COUNT
+Commit- History
+Pull request-meta data
+user-mapping
+
+Steps2
+
+Exporting migrating tools------ To archive the data (Dumps)
+
+
+ghe- migartor(server to cloud)
+gl exporter(gitlab to github)
+Manaual runnable script(svn and others)
+MIGRATION API (cloud to cloud )
+BBS Exporter (bb to github)
+
+step3
+
+importing migrating tools ----(to extract the data from archived file ) ---> (user mapping-CSV) (Tar.gz-repo,commits)
+cloud to cloud (repository API)
+GIT LAB (ECI(enterpise cloud importer) Tools)
+bb and github server(set of commands in git)
+SVN and other (manaual scripts)3rd party importings (wip)
+
+Step-4
+
+Post Migration
+preparing post migration steps
+we will achive the ol\d repo source
+Update the migration links in the old source
+update automations(manually)
+	weebhooks
+	ci/cd pipelines
+	chatops
+	githubs app
+verify the options 
+communicate the new changes
+
+
+
+Roles
+
+Enterprise 	Roles --- owner, member
+Organization Roles---owner, member
+Repositories roles------ Read, Triage, write,maintainer, Admin
+Team Roles--- Maintainer, member
+
+
+
+
+we create teams in org level and we will use in repo level
+we create custom roles in org level and we will use in repo level 
+
+
+
+Github Advance Security
+Dependabot
+code scanning--- code query language
+Secret scanning----custom patterns, recoginze patterns 
+
+
+Github Actions
+
+YAML --- 
+
+Reponame/.github/workflows/filename.yml
+
+
+
+name:
+on:
+push:
+branch:
+
+
+
+Authentications types
+2-Factor authentication
+SAML SSO(Security Assertion Markup Language- SINGLE SIGN ON) WE'LL USE ONLY ONE PASSWORD TO LOGIN FOR EX- AZURE, OKTA, ONE LOGIN  
+SSH-- ssh-keygen
+public and private key
+ id_rsa.pub --- public
+ id_rsa---------- private
+ 
+ Authorized keys 
+ he will place our public 
+ 
+enterpise:
+
+
+
+
+
+
+organization
+
+ 
+overview
+repo
+discussions
+packages
+projects
+teams
+ppl
+insights
+security
+settings
+
+repository
+
+code
+issues
+pull request
+actions
+projects
+wiki
+security
+insights
+settings
+
+A billing manager is a user who manages the billing settings of your organization.
+
+Billing managers will have the ability to:
+
+	*See the count of used seats and add seats
+ 	*Add, update, or remove payment methods
+ 	*View payment history
+ 	*Download, and receive receipts
+ 	*View a list of billing managers
+ 	*Invite additional billing managers
+ 	*Remove other existing billing managers
+	*Start, modify, or cancel sponsorships
+
+Billing managers will not be able to:
+
+ 	*Create or access repositories in your organization
+	*See private members of your organization
+ 	*Be seen in the list of organization members
+ 	*Use the organization’s payment method
+ 	*Purchase, edit, or cancel Marketplace subscriptions
+
+What is outside collaborator in GitHub?
+An outside collaborator is a person who is not a member of your organization, 
+but has access to one or more of your organization's repositories.
+
+
+
+ 
+ 
+ 
